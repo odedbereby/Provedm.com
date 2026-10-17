@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Provedm Support</title>
+<meta name="description" content="Help for Provedm: permissions, widgets and getting in touch.">
+<style>
+  :root { --bg:#ffffff; --fg:#1c1c1e; --muted:#6b6b70; --accent:#5856d6; --card:#f3f3f8; --line:#e2e2ea; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#000000; --fg:#f2f2f7; --muted:#a1a1a8; --accent:#8e8cff; --card:#1c1c1e; --line:#2c2c2e; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 20px 64px; }
+  nav { display:flex; gap:20px; flex-wrap:wrap; margin-bottom:36px; font-size:15px; }
+  nav a { color:var(--muted); text-decoration:none; } nav a[aria-current] { color:var(--fg); font-weight:600; }
+  h1 { font-size:34px; line-height:1.15; margin:0 0 8px; } h2 { font-size:22px; margin:36px 0 8px; } h3 { font-size:17px; margin:24px 0 4px; }
+  p, li { margin: 0 0 12px; } ul { padding-left: 22px; }
+  a { color: var(--accent); } .muted { color: var(--muted); font-size: 15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; margin:20px 0; }
+  table { width:100%; border-collapse:collapse; font-size:15px; margin:12px 0 20px; }
+  th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; } th { color:var(--muted); font-weight:600; }
+  footer { margin-top:48px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="index.html">Provedm</a><a href="privacy.html">Privacy Policy</a><a href="support.html" aria-current="page">Support</a></nav>
+
+<h1>Support</h1>
+<p class="muted">Provedm for iPhone &middot; iOS 18 or later</p>
+<div class="card">Need help or found a problem? Email <a href="mailto:support@provedm.com">support@provedm.com</a>. Please include your iPhone model, your iOS version (Settings &gt; General &gt; About) and what you expected to happen.</div>
+
+<h2>Common questions</h2>
+
+<h3>Why does Provedm ask for Calendar and Reminders access?</h3>
+<p>To show your events and reminders. Each is optional and requested only when you open the matching tab or use the matching widget. Your data is read on your iPhone and never leaves it. If you tapped "Don't Allow", turn access back on in Settings &gt; Provedm.</p>
+
+<h3>The Agenda or Reminders tab says "Connect Apple Calendar" or "Connect Apple Reminders".</h3>
+<p>Access for that app is off. Tap <strong>Allow Access</strong> or <strong>Open Settings</strong>, then switch it on. Notes always work without any access.</p>
+
+<h3>A widget says "Tap to allow Calendar" or "Tap to allow Reminders".</h3>
+<p>Widgets cannot ask for permission themselves. Tap the widget to open Provedm, which asks for the access. After you allow it, the widget fills in within a few minutes.</p>
+
+<h3>My widgets are out of date.</h3>
+<p>iOS decides how often widgets refresh. Provedm asks for an update every few minutes and whenever you change something in the app. If widgets lag, open Provedm once, and check that <strong>Background App Refresh</strong> is on (Settings &gt; General &gt; Background App Refresh &gt; Provedm). Low Power Mode also delays updates.</p>
+
+<h3>The Agenda is missing events.</h3>
+<p>Provedm shows the next seven days and hides events that already ended. Open Provedm's Settings (the gear) and make sure the calendar is switched on in the list. Apple does not share the Calendar app's own selection with other apps, so choose your calendars there once.</p>
+
+<h3>What happens when I complete a repeating reminder?</h3>
+<p>Only the current occurrence is completed and the series continues. To delete the whole series, swipe left and choose <strong>Series</strong>.</p>
+
+<h3>Where are my notes stored? Can I move them to a new iPhone?</h3>
+<p>Notes are stored only on your iPhone, inside Provedm. They are not synced. They can be included in your iPhone's backup, so restoring a backup to a new iPhone brings them along.</p>
+
+<h3>How do I delete my data?</h3>
+<p>Delete a note by swiping it left in the Notes tab. Deleting the app removes all notes and preferences. Events and reminders belong to Apple Calendar and Apple Reminders, so delete those in the Apple apps.</p>
+
+<p><a href="privacy.html">Privacy Policy</a></p>
+
+<footer>&copy; 2026 Oded Bereby. Provedm is not affiliated with Apple Inc. Apple, iPhone, Calendar and Reminders are trademarks of Apple Inc.</footer>
+</main>
+</body>
+</html>
