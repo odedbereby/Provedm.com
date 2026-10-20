@@ -27,9 +27,9 @@
 <nav><a href="index.html">Provedm</a><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="support.html">Support</a></nav>
 
 <h1>Privacy Policy</h1>
-<p class="muted">Effective October 17, 2026. Applies to Provedm for iPhone, version 1.0.</p>
+<p class="muted">Effective October 20, 2026. Applies to Provedm for iPhone, version 1.0.</p>
 
-<div class="card"><strong>In short:</strong> Provedm collects no personal data. Your calendar, reminders and notes stay on your iPhone. Provedm has no account, no servers it talks to, no analytics, no advertising and no third-party code that collects data.</div>
+<div class="card"><strong>In short:</strong> Your calendar, reminders and notes stay on your iPhone and are never sent to us. Signing in is optional and uses Sign in with Apple or Google; if you do, we store your email address, name and a sign-in ID so your account works, and you can delete all of it inside the app. No analytics, no advertising, no tracking.</div>
 
 <h2>What Provedm can access</h2>
 <table>
@@ -40,11 +40,23 @@
   <tr><td>Preferences</td><td>Which calendars to show and which widget page you were on.</td><td>On your device, shared only between Provedm and its widgets.</td></tr>
 </table>
 
+<h2>Accounts and what we store</h2>
+<p>Provedm works without an account. When an account is offered, you can sign in with Apple or Google. Provedm does not use passwords and does not use the Apple or Google SDKs.</p>
+<table>
+  <tr><th>Data</th><th>Why</th><th>Kept</th></tr>
+  <tr><td>Email address and name from Apple or Google (Apple may give a private relay address)</td><td>To identify your account.</td><td>Until you delete your account.</td></tr>
+  <tr><td>Sign-in ID from Apple or Google, and a random user ID</td><td>To recognize you when you sign in again, and to link both of your logins to one account if you choose.</td><td>Until you delete your account.</td></tr>
+  <tr><td>A random installation ID for each device you sign in on, and the app version</td><td>To manage your sessions and to limit abuse.</td><td>Until you sign out or delete your account.</td></tr>
+  <tr><td>Session records (stored as one-way hashes) and, for Apple, a token Apple issues</td><td>To keep you signed in, and to let us revoke Sign in with Apple when you delete your account.</td><td>Sessions until you sign out or after a year of no use; the Apple token until you delete your account.</td></tr>
+  <tr><td>Your IP address</td><td>Only as a short-lived counter that limits repeated sign-in attempts.</td><td>About an hour.</td></tr>
+</table>
+<p>This data is stored with Amazon Web Services (Amazon DynamoDB and AWS Lambda) in Stockholm, Sweden (EU). It is used only to run sign-in. It is not sold, shared with advertisers or used for tracking. The app also asks our server for settings (such as whether sign-in is offered or an update is required); that request contains only the app version and platform.</p>
+
 <h2>What Provedm does not do</h2>
 <ul>
-  <li>It does not send your calendar, reminders, notes or preferences to the developer or to anyone else.</li>
+  <li>It does not send your calendar, reminders, notes or preferences to the developer or to anyone else, whether or not you have an account.</li>
   <li>It does not use analytics, crash reporting services, advertising or tracking, and it does not use your advertising identifier.</li>
-  <li>It does not include third-party SDKs.</li>
+  <li>It does not include third-party SDKs. Sign in with Google uses a standard web sign-in sheet; Google's own privacy policy applies to that step.</li>
   <li>It does not read your contacts, location, photos, microphone or camera.</li>
 </ul>
 
@@ -52,7 +64,9 @@
 <ul>
   <li><strong>Permissions.</strong> Calendar and Reminders access are optional and asked for separately, only when you use a feature that needs them. Change them any time in Settings &gt; Provedm (or Settings &gt; Privacy &amp; Security &gt; Calendars / Reminders). Without access, those parts of the app and widgets stay empty. Notes keep working.</li>
   <li><strong>Choosing calendars.</strong> In Provedm's Settings you can pick which calendars appear.</li>
-  <li><strong>Deleting your data.</strong> Deleting Provedm deletes your notes and preferences from your iPhone. Events and reminders live in Apple Calendar and Apple Reminders, so they remain there; delete them in those apps.</li>
+  <li><strong>Deleting your account.</strong> In Provedm, open Settings &gt; Account &gt; Delete Account. This immediately deletes your account, linked logins, sessions and devices from our servers and revokes Sign in with Apple. If you cannot use the app, email provedm.support@gmail.com from the address on the account and we will delete it.</li>
+  <li><strong>Signing out.</strong> Signing out removes your session from the device and from our servers.</li>
+  <li><strong>Deleting on-device data.</strong> Deleting Provedm deletes your notes and preferences from your iPhone. Events and reminders live in Apple Calendar and Apple Reminders, so they remain there; delete them in those apps.</li>
 </ul>
 
 <h2>On-device suggestions</h2>
@@ -62,13 +76,13 @@
 <p>Your iPhone may include Provedm's notes in an iCloud or computer backup, depending on your device settings. That is controlled by Apple and you, not by Provedm. Calendar and Reminders may sync through iCloud or other accounts you have set up in iOS. Apple's own privacy policy covers those services.</p>
 
 <h2>Children</h2>
-<p>Provedm collects no personal information from anyone, including children.</p>
+<p>Provedm is not directed at children under 13 and does not knowingly collect their personal information. Without an account, Provedm collects nothing.</p>
 
 <h2>Changes to this policy</h2>
-<p>If a future version of Provedm adds anything that changes how data is handled, such as optional accounts, this policy will be updated before that version is released and the effective date above will change. The App Store's "App Privacy" details for the app will be updated at the same time.</p>
+<p>If a future version of Provedm changes how data is handled, this policy will be updated before that version is released and the effective date above will change. The App Store's "App Privacy" details for the app will be updated at the same time.</p>
 
 <h2>Contact</h2>
-<p>Questions about privacy: <a href="mailto:support@provedm.com">support@provedm.com</a>.</p>
+<p>Questions about privacy: <a href="mailto:provedm.support@gmail.com">provedm.support@gmail.com</a>.</p>
 
 <footer>&copy; 2026 Oded Bereby. Provedm is not affiliated with Apple Inc. Apple, iPhone, Calendar and Reminders are trademarks of Apple Inc.</footer>
 </main>
