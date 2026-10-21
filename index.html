@@ -5,56 +5,91 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Provedm</title>
 <meta name="description" content="Provedm merges every calendar in Apple Calendar, including Google and Outlook, with your reminders and notes, and puts it on goal-minded home and lock screen widgets.">
-<style>
-  :root { --bg:#ffffff; --fg:#1c1c1e; --muted:#6b6b70; --accent:#5856d6; --card:#f3f3f8; --line:#e2e2ea; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#000000; --fg:#f2f2f7; --muted:#a1a1a8; --accent:#8e8cff; --card:#1c1c1e; --line:#2c2c2e; } }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
-  main { max-width: 680px; margin: 0 auto; padding: 40px 20px 64px; }
-  nav { display:flex; gap:20px; flex-wrap:wrap; margin-bottom:36px; font-size:15px; }
-  nav a { color:var(--muted); text-decoration:none; } nav a[aria-current] { color:var(--fg); font-weight:600; }
-  h1 { font-size:34px; line-height:1.15; margin:0 0 8px; } h2 { font-size:22px; margin:36px 0 8px; } h3 { font-size:17px; margin:24px 0 4px; }
-  p, li { margin: 0 0 12px; } ul { padding-left: 22px; }
-  a { color: var(--accent); } .muted { color: var(--muted); font-size: 15px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; margin:20px 0; }
-  table { width:100%; border-collapse:collapse; font-size:15px; margin:12px 0 20px; }
-  th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; } th { color:var(--muted); font-weight:600; }
-  footer { margin-top:48px; color:var(--muted); font-size:14px; }
-</style>
+<meta name="theme-color" content="#fbfaff">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-<nav><a href="index.html" aria-current="page">Provedm</a><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a></nav>
+<header class="bar"><div class="bar-inner">
+<a class="brand" href="index.html"><img src="assets/favicon.png" alt="">Provedm</a>
+<a class="link" href="#widgets">Widgets</a><a class="link" href="#calendars">Calendars</a><a class="link" href="privacy.html">Privacy</a><a class="link" href="support.html">Support</a>
+</div></header>
 
-<h1>Provedm</h1>
-<p class="muted">All your calendars, one clear view. Widgets that show what matters next.</p>
-<p>Provedm merges every calendar in Apple Calendar, including Google and Outlook, with your reminders and quick notes, then presents them so you can see what is now, what is next and what is due without opening anything.</p>
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <img class="icon" src="assets/icon.png" alt="Provedm app icon">
+      <h1 class="big">All your calendars, <span>one clear view.</span></h1>
+      <p class="lead">Provedm merges every calendar in Apple Calendar, Google and Outlook included, with your reminders and quick notes, then shows what is now, what is next and what is due, without opening anything.</p>
+      <div class="pills"><span class="pill">Home screen widgets</span><span class="pill">Lock screen widgets</span><span class="pill">Quick notes</span><span class="pill">Google &amp; Outlook via Apple Calendar</span></div>
+    </div>
+    <div class="stage">
+      <div class="phone"><img src="assets/agenda.jpg" alt="The Provedm agenda: the next seven days from all your calendars"></div>
+      <img class="float home" src="assets/widget-home.png" alt="The Today at a Glance home screen widget">
+      <img class="float lock" src="assets/widget-inbox.png" alt="The Inbox lock screen widget">
+    </div>
+  </div>
+</div>
 
-<h2>Widgets are the main event</h2>
-<ul>
-  <li><strong>Today at a Glance (home screen).</strong> Reminders due today, one at a time, today's events with the one in progress marked, and tomorrow's first event. The calendar turns its own page as events finish and rests on the last page by the end of the day. Complete a reminder or flip pages right from the widget.</li>
-  <li><strong>Today (lock screen).</strong> Your next events and how many more the week holds.</li>
-  <li><strong>Inbox (lock screen).</strong> Open reminders in the order that matters: due today first, then undated, then the next three days.</li>
-  <li><strong>Next Reminder (lock screen).</strong> The next reminder alert in the coming 24 hours.</li>
-  <li><strong>New Note (Control Center and lock screen).</strong> Capture a note the moment you think of it.</li>
-</ul>
-<p class="muted">To add a widget, touch and hold the Home Screen, tap +, and search for Provedm. Lock screen widgets are added by touching and holding the Lock Screen.</p>
+<section id="widgets">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">The main event</p>
+      <h2 class="sec">Widgets that show what matters next.</h2>
+      <p class="sec-lead">Glance at your phone and know your day. Complete a reminder or flip a page right from the widget.</p>
+      <ul class="feats">
+        <li><div class="dot">🏠</div><div><b>Today at a Glance</b><span>Home screen. Reminders due today, today's events with the one in progress marked, and tomorrow's first event. The calendar turns its own page as events finish and rests on the last page by the end of the day.</span></div></li>
+        <li><div class="dot">🔒</div><div><b>Today, Inbox and Next Reminder</b><span>Lock screen. Your next events and how many more the week holds, open reminders in the order that matters, and the next reminder alert in the coming 24 hours.</span></div></li>
+        <li><div class="dot">✎</div><div><b>New Note</b><span>A Control Center and lock screen control, so a thought becomes a note before you forget it.</span></div></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <img class="home" src="assets/widget-home.png" alt="Today at a Glance home screen widget">
+      <div class="row">
+        <img src="assets/widget-today.png" alt="Today lock screen widget">
+        <img src="assets/widget-inbox.png" alt="Inbox lock screen widget">
+      </div>
+      <img src="assets/widget-next.png" alt="Next Reminder lock screen widget" style="width: 78%">
+    </div>
+  </div>
+</section>
 
-<h2>Bring Google and Outlook along</h2>
-<p>Provedm reads Apple Calendar, so add your other calendars there once and they appear in the app and in every widget: open <strong>Settings &gt; Apps &gt; Calendar &gt; Calendar Accounts &gt; Add Account</strong>, choose Google or Microsoft Exchange / Outlook.com, sign in and switch Calendars on. Then pick the calendars to show in Provedm's Settings.</p>
+<section id="calendars" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Google &amp; Outlook</p>
+    <h2 class="sec">Bring your other calendars along.</h2>
+    <p class="sec-lead">Provedm reads Apple Calendar, so add your accounts there once and they appear in the app and in every widget.</p>
+    <div class="steps">
+      <div class="step"><b>Open Calendar Accounts</b><span>Settings &rsaquo; Apps &rsaquo; Calendar &rsaquo; Calendar Accounts.</span></div>
+      <div class="step"><b>Add Account</b><span>Choose Google, or Microsoft Exchange / Outlook.com, and sign in. Switch Calendars on.</span></div>
+      <div class="step"><b>Pick them in Provedm</b><span>Open Provedm's Settings (the gear) and choose which calendars to show.</span></div>
+    </div>
+    <div class="merge">
+      <span class="chip"><i style="background:#3b82f6"></i>Google</span>
+      <span class="chip"><i style="background:#6558f5"></i>Outlook</span>
+      <span class="chip"><i style="background:#f59e0b"></i>iCloud</span>
+      <span>&rarr; one agenda</span>
+    </div>
+  </div>
+</section>
 
-<h2>Inside the app</h2>
-<ul>
-  <li><strong>Agenda.</strong> The next seven days from all your calendars, grouped by day, with a live marker for what is happening now.</li>
-  <li><strong>Reminders.</strong> Overdue and due-today first. Complete, edit or delete in place; repeating reminders keep going.</li>
-  <li><strong>Notes.</strong> Quick notes, one tap away from the app or the New Note control.</li>
-  <li><strong>Quick capture.</strong> Add an event, reminder or note in seconds.</li>
-  <li><strong>You choose the access.</strong> Notes work without any permission. Calendar and Reminders are requested only when you use them, and each is optional.</li>
-  <li><strong>Welcome Guide.</strong> A short walkthrough of all this, any time, in Settings.</li>
-</ul>
-<p><a href="privacy.html">Privacy Policy</a> &middot; <a href="support.html">Support</a></p>
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Inside the app</p>
+    <h2 class="sec">A calm place for the rest.</h2>
+    <p class="sec-lead">Agenda, reminders and notes, with quick capture for an event, a reminder or a note in seconds.</p>
+    <div class="shots">
+      <figure><div class="phone"><img src="assets/agenda.jpg" alt="Agenda"></div><figcaption><b>Agenda</b><span>The next seven days, grouped by day, with a live marker for what is happening now.</span></figcaption></figure>
+      <figure><div class="phone"><img src="assets/reminders.jpg" alt="Reminders"></div><figcaption><b>Reminders</b><span>Overdue and due today first. Complete, edit or delete in place; repeating reminders keep going.</span></figcaption></figure>
+      <figure><div class="phone"><img src="assets/notes.jpg" alt="Notes"></div><figcaption><b>Notes</b><span>Jot a note in a tap, from the app or the New Note control.</span></figcaption></figure>
+    </div>
+  </div>
+</section>
 
-<footer>&copy; 2026 Oded Bereby. Provedm is not affiliated with Apple Inc. Apple, iPhone, Calendar and Reminders are trademarks of Apple Inc.</footer>
-</main>
+<footer>
+  <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="support.html">Support</a></p>
+  <p>&copy; 2026 Oded Bereby. Provedm is not affiliated with Apple Inc. Apple, iPhone, Calendar and Reminders are trademarks of Apple Inc. Google and Outlook are trademarks of their respective owners.</p>
+</footer>
 </body>
 </html>
