@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 270">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -60 1000 340">
 <style>
 .l{fill:none;stroke:#303566;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .w{fill:#fff;stroke:#303566;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
@@ -10,52 +10,29 @@
 <linearGradient id="mg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9adff"/><stop offset="1" stop-color="#6558f5"/></linearGradient>
 <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e5e0ff"/><stop offset="1" stop-color="#f8f7ff" stop-opacity="0"/></linearGradient>
 </defs>
-<path d="M-10 50 H230 C380 50 400 212 560 212" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
-<path d="M-10 112 H230 C380 112 400 212 560 212" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
-<path d="M-10 174 H230 C380 174 400 212 560 212" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
-<path d="M560 212 H800" fill="none" stroke="#fff" stroke-width="24" stroke-linecap="round"/>
-<path d="M-10 50 H230 C380 50 400 212 560 212" fill="none" stroke="#5b8dff" stroke-width="3" stroke-dasharray="14 12" stroke-linecap="round"/>
-<path d="M-10 112 H230 C380 112 400 212 560 212" fill="none" stroke="#6558f5" stroke-width="3" stroke-dasharray="14 12" stroke-linecap="round"/>
-<path d="M-10 174 H230 C380 174 400 212 560 212" fill="none" stroke="#f5b84a" stroke-width="3" stroke-dasharray="14 12" stroke-linecap="round"/>
-<path d="M560 212 H800" fill="none" stroke="#5b8dff" stroke-width="3" stroke-dasharray="10 20" stroke-dashoffset="0" stroke-linecap="round"/>
-<path d="M560 212 H800" fill="none" stroke="#6558f5" stroke-width="3" stroke-dasharray="10 20" stroke-dashoffset="-10" stroke-linecap="round"/>
-<path d="M560 212 H800" fill="none" stroke="#f5b84a" stroke-width="3" stroke-dasharray="10 20" stroke-dashoffset="-20" stroke-linecap="round"/>
-<g transform="translate(70 18)">
-<rect class="w" x="0" y="0" width="112" height="40" rx="14"/>
-<rect class="f" x="4" y="26" width="104" height="10" rx="5" fill="#5b8dff" opacity=".85"/>
-<text x="56" y="19" text-anchor="middle" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#303566">Google</text>
-<circle class="w" cx="26" cy="42" r="7"/><circle class="w" cx="86" cy="42" r="7"/>
-</g>
-<rect class="w" x="208" y="26" width="46" height="26" rx="9"/><rect class="f" x="212" y="42" width="38" height="7" rx="3.5" fill="#5b8dff" opacity=".85"/>
-<g transform="translate(70 80)">
-<rect class="w" x="0" y="0" width="112" height="40" rx="14"/>
-<rect class="f" x="4" y="26" width="104" height="10" rx="5" fill="#6558f5" opacity=".85"/>
-<text x="56" y="19" text-anchor="middle" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#303566">Outlook</text>
-<circle class="w" cx="26" cy="42" r="7"/><circle class="w" cx="86" cy="42" r="7"/>
-</g>
-<rect class="w" x="208" y="88" width="46" height="26" rx="9"/><rect class="f" x="212" y="104" width="38" height="7" rx="3.5" fill="#6558f5" opacity=".85"/>
-<g transform="translate(70 142)">
-<rect class="w" x="0" y="0" width="112" height="40" rx="14"/>
-<rect class="f" x="4" y="26" width="104" height="10" rx="5" fill="#f5b84a" opacity=".85"/>
-<text x="56" y="19" text-anchor="middle" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#303566">iCloud</text>
-<circle class="w" cx="26" cy="42" r="7"/><circle class="w" cx="86" cy="42" r="7"/>
-</g>
-<rect class="w" x="208" y="150" width="46" height="26" rx="9"/><rect class="f" x="212" y="166" width="38" height="7" rx="3.5" fill="#f5b84a" opacity=".85"/>
-<rect class="w" x="800" y="28" width="170" height="195" rx="14"/>
-<path class="l" d="M800 66 H970"/>
-<text x="885" y="55" text-anchor="middle" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#303566">Today</text>
-<rect class="f" x="816" y="82" width="6" height="20" rx="3" fill="#5b8dff"/>
-<rect class="t" x="828" y="82" width="118" height="20" rx="6"/>
-<rect class="f" x="816" y="110" width="6" height="20" rx="3" fill="#6558f5"/>
-<rect class="t" x="828" y="110" width="96" height="20" rx="6"/>
-<rect class="f" x="816" y="138" width="6" height="20" rx="3" fill="#f5b84a"/>
-<rect class="t" x="828" y="138" width="118" height="20" rx="6"/>
-<rect class="f" x="816" y="166" width="6" height="20" rx="3" fill="#5b8dff"/>
-<rect class="t" x="828" y="166" width="96" height="20" rx="6"/>
-<rect class="f" x="816" y="194" width="6" height="20" rx="3" fill="#6558f5"/>
-<rect class="t" x="828" y="194" width="118" height="20" rx="6"/>
-<path class="l" d="M885 28 v-30"/><path d="M885 -2 h30 l-7 9 l7 9 h-30z" fill="#f2788a" stroke="#303566" stroke-width="1.6" stroke-linejoin="round" transform="translate(0 14)"/>
-<g transform="translate(660 208) scale(0.8)">
+<path d="M150 54 C330 54 380 126 560 126 H790" fill="none" stroke="#303566" stroke-width="18" stroke-linecap="round"/>
+<path d="M150 140 C330 140 380 140 560 140 H790" fill="none" stroke="#303566" stroke-width="18" stroke-linecap="round"/>
+<path d="M150 226 C330 226 380 154 560 154 H790" fill="none" stroke="#303566" stroke-width="18" stroke-linecap="round"/>
+<path d="M150 54 C330 54 380 126 560 126 H790" fill="none" stroke="#5b8dff" stroke-width="13" stroke-linecap="round"/>
+<path d="M150 140 C330 140 380 140 560 140 H790" fill="none" stroke="#6558f5" stroke-width="13" stroke-linecap="round"/>
+<path d="M150 226 C330 226 380 154 560 154 H790" fill="none" stroke="#f5b84a" stroke-width="13" stroke-linecap="round"/>
+<g transform="translate(24 24)"><rect class="w" x="0" y="0" width="150" height="60" rx="16"/>
+<rect class="f" x="12" y="14" width="32" height="32" rx="9" fill="#5b8dff"/><text x="28" y="37" text-anchor="middle" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="18" font-weight="800" fill="#fff">G</text>
+<text x="54" y="35" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#303566">Google</text></g>
+<g transform="translate(24 110)"><rect class="w" x="0" y="0" width="150" height="60" rx="16"/>
+<rect class="f" x="12" y="14" width="32" height="32" rx="9" fill="#6558f5"/><text x="28" y="37" text-anchor="middle" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="18" font-weight="800" fill="#fff">O</text>
+<text x="54" y="35" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#303566">Outlook</text></g>
+<g transform="translate(24 196)"><rect class="w" x="0" y="0" width="150" height="60" rx="16"/>
+<rect class="f" x="12" y="14" width="32" height="32" rx="9" fill="#f5b84a"/><text x="28" y="37" text-anchor="middle" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="18" font-weight="800" fill="#fff">i</text>
+<text x="54" y="35" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#303566">iCloud</text></g>
+<rect class="w" x="790" y="40" width="190" height="200" rx="18"/><path class="l" d="M790 84 H980"/>
+<text x="885" y="70" text-anchor="middle" font-family="ui-rounded,-apple-system,Helvetica,Arial,sans-serif" font-size="16" font-weight="800" fill="#303566">Today</text>
+<rect class="f" x="806" y="100" width="6" height="20" rx="3" fill="#5b8dff"/><rect class="t" x="818" y="100" width="140" height="20" rx="7"/>
+<rect class="f" x="806" y="128" width="6" height="20" rx="3" fill="#6558f5"/><rect class="t" x="818" y="128" width="112" height="20" rx="7"/>
+<rect class="f" x="806" y="156" width="6" height="20" rx="3" fill="#f5b84a"/><rect class="t" x="818" y="156" width="140" height="20" rx="7"/>
+<rect class="f" x="806" y="184" width="6" height="20" rx="3" fill="#5b8dff"/><rect class="t" x="818" y="184" width="112" height="20" rx="7"/>
+<rect class="f" x="806" y="212" width="6" height="20" rx="3" fill="#6558f5"/><rect class="t" x="818" y="212" width="140" height="20" rx="7"/>
+<g transform="translate(930 40) scale(0.62)">
 <path class="l" d="M-14 -2 v-14 M14 -2 v-14"/>
 <ellipse class="w" cx="-14" cy="-1" rx="11" ry="5"/><ellipse class="w" cx="14" cy="-1" rx="11" ry="5"/>
 <path d="M-34 -22 q-4 -52 34 -56 q38 4 34 56 q-34 14 -68 0z" fill="url(#mg)" stroke="#303566" stroke-width="1.8" stroke-linejoin="round"/>
@@ -63,4 +40,7 @@
 <circle cx="-10" cy="-62" r="2.6" fill="#303566"/><circle cx="10" cy="-62" r="2.6" fill="#303566"/><path class="l" d="M-4 -56 q4 4 8 0"/>
 <path class="l" d="M33 -46 q14 -4 16 -20"/><path class="l" d="M-33 -46 q-12 4 -13 16"/>
 </g>
+<path d="M500 51 Q500 60 509 60 Q500 60 500 69 Q500 60 491 60 Q500 60 500 51z" fill="#f5b84a" opacity=".85"/>
+<path d="M640 232 Q640 240 648 240 Q640 240 640 248 Q640 240 632 240 Q640 240 640 232z" fill="#6558f5" opacity=".85"/>
+<path d="M430 228 Q430 235 437 235 Q430 235 430 242 Q430 235 423 235 Q430 235 430 228z" fill="#5b8dff" opacity=".85"/>
 </svg>
