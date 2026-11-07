@@ -1,6 +1,6 @@
 # Provedm Privacy Policy
 
-> Effective October 20, 2026. Applies to Provedm for iPhone, version 1.0.
+> Effective November 7, 2026. Applies to Provedm for iPhone, version 1.0.
 
 **In short:** Calendar, reminders, and notes stay on the iPhone and are not sent to Provedm. An account is optional. If a person chooses to sign in with Apple or Google, Provedm stores their email address, name, and a sign-in ID so the account works. Account data can be deleted in the app. Provedm does not use analytics, advertising, or tracking.
 
@@ -21,7 +21,7 @@ An account is not required. When an account is offered, people can sign in with 
 | --- | --- | --- |
 | Email address and name from Apple or Google; Apple may provide a private relay address. | To identify the account. | Until the account is deleted. |
 | Apple or Google sign-in ID and a random user ID. | To recognize the account on later sign-in and optionally link both logins to it. | Until the account is deleted. |
-| A random installation ID for each signed-in device and the app version. | To manage sessions and limit abuse. | Until sign-out or account deletion. |
+| A random installation ID for each signed-in device. | To manage sessions and limit abuse. | Until the account is deleted; sign-out does not remove it. |
 | Session records, stored as one-way hashes, and an Apple-issued token for Apple sign-in. | To keep the person signed in and revoke Sign in with Apple on account deletion. | Sessions are retained until sign-out or one year of inactivity; the Apple token is retained until account deletion. |
 | IP address. | Only as a short-lived counter to limit repeated sign-in attempts. | About one hour. |
 
