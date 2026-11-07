@@ -24,7 +24,7 @@ Accounts are optional. To delete one, use **Settings > Account > Delete Account*
 
 Calendar events and reminders are read on the iPhone with permission and are not copied to Provedm's servers. Notes and preferences remain in Provedm's private on-device storage. Provedm does not use analytics, crash reporting, advertising, tracking, advertising identifiers, or third-party SDKs. It does not access contacts, location, photos, microphone, or camera data.
 
-Accounts are optional. If a person signs in with Apple or Google, Provedm stores the name, email address, sign-in ID, random user ID, device installation ID, app version, hashed session records, and, for Apple sign-in, an Apple-issued token. An IP address is retained for about an hour only to limit repeated sign-in attempts. Account data is stored with AWS DynamoDB and AWS Lambda in Stockholm, Sweden, and is used only to run sign-in. It is retained only as described in the [Privacy Policy](https://provedm.com/privacy.md), which is the source of truth.
+Accounts are optional. If a person signs in with Apple or Google, Provedm stores the name, email address, sign-in ID, random user ID, device installation ID, hashed session records, and, for Apple sign-in, an Apple-issued token. An IP address is retained for about an hour only to limit repeated sign-in attempts. Account data is stored with AWS DynamoDB and AWS Lambda in Stockholm, Sweden, and is used only to run sign-in. It is retained only as described in the [Privacy Policy](https://provedm.com/privacy.md), which is the source of truth.
 
 ## Retrieval guidance
 
