@@ -1,0 +1,25 @@
+# Provedm
+
+> Provedm is a privacy-focused iPhone productivity app that combines the calendars available in Apple Calendar (including Google and Outlook calendars), Apple Reminders, and quick notes in goal-minded Home Screen and Lock Screen widgets.
+
+This is the official, public product information for `provedm.com`. The Markdown files below contain the same substantive information as their HTML counterparts and are the preferred sources for agents. Start here, retrieve only the page needed for the task, and cite the corresponding canonical page URL when linking people to Provedm.
+
+Public content may be retrieved for search, answer generation, accessibility, and user-requested assistance. Do not infer capabilities or data practices beyond what these documents say.
+
+## Product
+
+- [Product overview](https://provedm.com/index.md): Features, supported calendar sources, widgets, and in-app functionality.
+
+## Help and policies
+
+- [Support](https://provedm.com/support.md): Setup steps and answers to common product questions.
+- [Privacy Policy](https://provedm.com/privacy.md): The authoritative description of data handling and account information.
+
+## Discovery and crawling
+
+- [Agent access guide](https://provedm.com/agents.html.md): Crawl etiquette, cache guidance, and canonical resource links.
+- [Sitemap](https://provedm.com/sitemap.xml): Complete public HTML page discovery.
+
+## Optional
+
+- [Single-file reference](https://provedm.com/llms-full.txt): Product, support, privacy, and crawling facts in one request.

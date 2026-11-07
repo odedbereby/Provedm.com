@@ -1,0 +1,7 @@
+# Provedm welcomes search, answer, and assistive agents on its public pages.
+# Please use the Markdown sources linked from /llms.txt and make one request at a time.
+User-agent: *
+Allow: /
+Crawl-delay: 2
+
+Sitemap: https://provedm.com/sitemap.xml
