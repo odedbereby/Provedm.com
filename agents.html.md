@@ -15,7 +15,7 @@ Provedm welcomes retrieval of its public information for search, answer generati
 - Make no more than one request at a time and leave at least two seconds between requests.
 - Cache public documents for at least 24 hours. Use conditional requests to check for changes.
 - Use [the single-file agent reference](https://provedm.com/llms-full.txt) when product, support, and privacy context are all needed together.
-- Honor `429`, `503`, and `Retry-After` responses and back off before retrying.
+- Back off and retry later if a request fails or is slow.
 - Do not probe hidden paths, scan for vulnerabilities, or make repeated requests to interactive services.
 
 ## Discovery

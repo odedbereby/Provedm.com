@@ -28,7 +28,7 @@ Accounts are optional. If a person signs in with Apple or Google, Provedm stores
 
 ## Retrieval guidance
 
-Public content may be used for search, answer generation, accessibility, and user-requested assistance. Prefer the page-specific Markdown files linked in [llms.txt](https://provedm.com/llms.txt) when only one topic is needed. Make one request at a time, wait at least two seconds between requests, cache documents for 24 hours or longer, and respect `429`, `503`, and `Retry-After` responses.
+Public content may be used for search, answer generation, accessibility, and user-requested assistance. Prefer the page-specific Markdown files linked in [llms.txt](https://provedm.com/llms.txt) when only one topic is needed. Make one request at a time, wait at least two seconds between requests, cache documents for 24 hours or longer, and back off if a request fails.
 
 ## Canonical documents
 

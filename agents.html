@@ -37,7 +37,7 @@
   <li>Make at most one request at a time to this site, with at least two seconds between requests.</li>
   <li>Cache public documents for at least 24 hours and use conditional requests when checking for a change.</li>
   <li>Use the single-file <a href="llms-full.txt">agent reference</a> when product, support and privacy context is needed together.</li>
-  <li>Honor HTTP <code>429</code>, <code>503</code> and <code>Retry-After</code> responses if they are received; back off before retrying.</li>
+  <li>Back off and retry later if a request fails or is slow.</li>
   <li>Do not probe for hidden paths, scan for vulnerabilities or submit repeated requests to interactive services.</li>
 </ul>
 
