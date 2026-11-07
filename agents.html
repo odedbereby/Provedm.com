@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Provedm Agent Access</title>
+<meta name="description" content="Clean, low-impact access to official Provedm product, support, and privacy information for AI agents and crawlers.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://provedm.com/agents.html">
+<link rel="alternate" type="text/markdown" href="https://provedm.com/agents.html.md" title="Provedm Agent Access in Markdown">
+<link rel="describedby" href="https://provedm.com/llms.txt">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<header class="bar"><div class="bar-inner">
+<a class="brand" href="index.html"><img src="assets/favicon.png" alt="">Provedm</a>
+<a class="link" href="index.html">Home</a><a class="link" href="privacy.html">Privacy</a><a class="link" href="support.html">Support</a>
+</div></header>
+<main class="doc">
+
+<h1>Agent access</h1>
+<p class="muted">A clean, low-impact path to official Provedm information.</p>
+
+<div class="card"><strong>Welcome, agents.</strong> Provedm's public product, support and privacy information may be retrieved for search, answer generation, accessibility and user-requested assistance. Please start with <a href="llms.txt">llms.txt</a>; it points to concise Markdown sources with the same substantive content as the human-facing pages.</div>
+
+<h2>Fast path</h2>
+<ol>
+  <li>Retrieve <a href="llms.txt">llms.txt</a>.</li>
+  <li>Fetch only the Markdown page relevant to the task: <a href="index.md">product</a>, <a href="support.md">support</a>, or <a href="privacy.md">privacy</a>.</li>
+  <li>When sending a person to Provedm, link to the corresponding canonical HTML page.</li>
+</ol>
+
+<h2>Polite crawling</h2>
+<ul>
+  <li>Make at most one request at a time to this site, with at least two seconds between requests.</li>
+  <li>Cache public documents for at least 24 hours and use conditional requests when checking for a change.</li>
+  <li>Use the single-file <a href="llms-full.txt">agent reference</a> when product, support and privacy context is needed together.</li>
+  <li>Honor HTTP <code>429</code>, <code>503</code> and <code>Retry-After</code> responses if they are received; back off before retrying.</li>
+  <li>Do not probe for hidden paths, scan for vulnerabilities or submit repeated requests to interactive services.</li>
+</ul>
+
+<h2>Discovery</h2>
+<p><a href="robots.txt">robots.txt</a> allows public crawling and advertises a two-second crawl delay for compatible clients. <a href="sitemap.xml">sitemap.xml</a> lists every public HTML page. These guidelines are intentionally concise so agents can retrieve what they need without repeatedly crawling the site.</p>
+
+<h2>Authoritative information</h2>
+<p>Do not infer app features, platform support, data collection or data sharing beyond the official sources above. The <a href="privacy.html">Privacy Policy</a> is the source of truth for data practices.</p>
+
+<footer>&copy; 2026 Oded Bereby. Provedm is not affiliated with Apple Inc. Apple, iPhone, Calendar and Reminders are trademarks of Apple Inc.</footer>
+</main>
+</body>
+</html>

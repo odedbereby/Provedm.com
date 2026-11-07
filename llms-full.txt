@@ -1,0 +1,38 @@
+# Provedm: single-file agent reference
+
+> Official, compact reference for Provedm's product features, support guidance, privacy practices, and polite access rules. Last reviewed November 2, 2026.
+
+## Product
+
+Provedm is an iPhone productivity app requiring iOS 18 or later. It combines every calendar available in Apple Calendar, including Google and Outlook calendars, with Apple Reminders and quick notes. It displays what is happening now, what is next, and what is due.
+
+It offers a Home Screen **Today at a Glance** widget for due-today reminders, today's events, and tomorrow's first event. Lock Screen widgets provide **Today**, **Inbox**, and **Next Reminder** views. **New Note** is available as a Control Center and Lock Screen control. The app includes a seven-day agenda, reminders ordered with overdue and due-today items first, and on-device notes.
+
+Google and Outlook calendars are available after they are added to Apple Calendar in iPhone Settings and enabled in Provedm's Settings.
+
+## Support
+
+For help, contact [provedm.support@gmail.com](mailto:provedm.support@gmail.com) with the iPhone model, iOS version, and expected behavior.
+
+Calendar and Reminders access is optional and granted separately. Widgets cannot request permission, so a person must tap a widget to open Provedm and grant access. Widget refresh timing is controlled by iOS; Background App Refresh and avoiding Low Power Mode may help.
+
+Provedm shows the next seven days and hides events that have ended. It has its own calendar selection in Settings. Completing a repeating reminder completes only the current occurrence. Notes live only on the iPhone and may transfer through an iPhone backup.
+
+Accounts are optional. To delete one, use **Settings > Account > Delete Account** in the app. Deleting the app deletes on-device notes and preferences but not calendar events or reminders, which belong to Apple's apps.
+
+## Privacy
+
+Calendar events and reminders are read on the iPhone with permission and are not copied to Provedm's servers. Notes and preferences remain in Provedm's private on-device storage. Provedm does not use analytics, crash reporting, advertising, tracking, advertising identifiers, or third-party SDKs. It does not access contacts, location, photos, microphone, or camera data.
+
+Accounts are optional. If a person signs in with Apple or Google, Provedm stores the name, email address, sign-in ID, random user ID, device installation ID, app version, hashed session records, and, for Apple sign-in, an Apple-issued token. An IP address is retained for about an hour only to limit repeated sign-in attempts. Account data is stored with AWS DynamoDB and AWS Lambda in Stockholm, Sweden, and is used only to run sign-in. It is retained only as described in the [Privacy Policy](https://provedm.com/privacy.md), which is the source of truth.
+
+## Retrieval guidance
+
+Public content may be used for search, answer generation, accessibility, and user-requested assistance. Prefer the page-specific Markdown files linked in [llms.txt](https://provedm.com/llms.txt) when only one topic is needed. Make one request at a time, wait at least two seconds between requests, cache documents for 24 hours or longer, and respect `429`, `503`, and `Retry-After` responses.
+
+## Canonical documents
+
+- Product: https://provedm.com/
+- Support: https://provedm.com/support.html
+- Privacy: https://provedm.com/privacy.html
+- Agent access: https://provedm.com/agents.html
