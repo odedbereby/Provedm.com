@@ -60,7 +60,7 @@ Delete a note by swiping it left in the Notes tab. Deleting the app removes note
 
 ### How do I delete my account?
 
-In Provedm, open **Settings > Account > Delete Account**. The account, linked logins, and sessions are immediately removed from the server. Provedm works without an account, and notes, events, and reminders never leave the iPhone.
+In Provedm, open **Settings > Account > Delete Account**. The account, linked logins, and sessions are immediately removed from the live database; copies in database backups are gone within 35 days (see the Privacy Policy). Provedm works without an account, and notes, events, and reminders never leave the iPhone.
 
 ### I can't sign in, or I see two accounts.
 
