@@ -1,6 +1,6 @@
 # Provedm: single-file agent reference
 
-> Official, compact reference for Provedm's product features, support guidance, privacy practices, and polite access rules. Last reviewed November 2, 2026.
+> Official, compact reference for Provedm's product features, support guidance, privacy practices, and polite access rules. Last reviewed November 7, 2026.
 
 ## Product
 
