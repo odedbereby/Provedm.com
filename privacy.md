@@ -1,6 +1,6 @@
 # Provedm Privacy Policy
 
-> Effective October 20, 2026. Applies to Provedm for iPhone, version 1.0.
+> Effective November 7, 2026. Applies to Provedm for iPhone, version 1.0.
 
 **In short:** Calendar, reminders, and notes stay on the iPhone and are not sent to Provedm. An account is optional. If a person chooses to sign in with Apple or Google, Provedm stores their email address, name, and a sign-in ID so the account works. Account data can be deleted in the app. Provedm does not use analytics, advertising, or tracking.
 
@@ -21,7 +21,7 @@ An account is not required. When an account is offered, people can sign in with 
 | --- | --- | --- |
 | Email address and name from Apple or Google; Apple may provide a private relay address. | To identify the account. | Until the account is deleted. |
 | Apple or Google sign-in ID and a random user ID. | To recognize the account on later sign-in and optionally link both logins to it. | Until the account is deleted. |
-| A random installation ID for each signed-in device and the app version. | To manage sessions and limit abuse. | Until sign-out or account deletion. |
+| A random installation ID for each signed-in device. | To manage sessions and limit abuse. | Until the account is deleted; sign-out does not remove it. |
 | Session records, stored as one-way hashes, and an Apple-issued token for Apple sign-in. | To keep the person signed in and revoke Sign in with Apple on account deletion. | Sessions are retained until sign-out or one year of inactivity; the Apple token is retained until account deletion. |
 | IP address. | Only as a short-lived counter to limit repeated sign-in attempts. | About one hour. |
 
@@ -38,9 +38,17 @@ This account data is stored with Amazon Web Services (Amazon DynamoDB and AWS La
 
 - **Permissions:** Calendar and Reminders permission is optional, separate, and requested only when a feature needs it. It can be changed in **Settings > Provedm** or **Settings > Privacy & Security > Calendars / Reminders**. Without it, the related areas and widgets remain empty. Notes continue to work.
 - **Calendar selection:** People choose which calendars appear in Provedm's Settings.
-- **Account deletion:** In the app, open **Settings > Account > Delete Account**. This immediately deletes the account, linked logins, sessions, and devices and revokes Sign in with Apple. If the app cannot be used, email [provedm.support@gmail.com](mailto:provedm.support@gmail.com) from the account email address.
+- **Account deletion:** In the app, open **Settings > Account > Delete Account**. This immediately deletes the account, linked logins, sessions, and devices from the live database and asks Apple to revoke Sign in with Apple. If something goes wrong, the app shows an error and the request can be repeated; a retry deletes whatever is left. A few short-lived copies remain for a limited time, as described under "Backups, logs, and short-lived data" below. If the app cannot be used, email [provedm.support@gmail.com](mailto:provedm.support@gmail.com) from the account email address.
 - **Sign-out:** Signing out removes the session from the device and server.
 - **On-device data deletion:** Deleting Provedm deletes notes and preferences from the iPhone. Events and reminders remain in Apple Calendar and Apple Reminders unless deleted there.
+
+## Backups, logs, and short-lived data
+
+Deleting an account removes it from the live database at once. These copies are not deleted at once, and they are the only ones:
+
+- **Database backups:** The account database keeps point-in-time backups for recovery from a failure. Deleted account data can remain in those backups for up to 35 days and is then gone.
+- **Service logs:** Servers write logs to find and fix faults and abuse, and keep them for 30 days. They record technical events and errors, such as which sign-in provider was used or that a request was rate limited, and each request's route, status, and timing. They do not routinely contain an IP address, an email address, or anything from calendar, reminders, or notes, although an error message can in rare cases include part of the request that caused it.
+- **Short-lived counters:** Counters that limit repeated requests (keyed by IP address, random user ID, or installation ID) expire by themselves within about an hour. A one-way hash of each accepted sign-in token, which stops the same token being used twice, expires when that token would have expired anyway.
 
 ## On-device suggestions
 

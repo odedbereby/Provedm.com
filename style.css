@@ -8,6 +8,7 @@
   --line: #e6e3fb;
   --bg: #fbfaff;
   --glow: linear-gradient(135deg, #cfc6ff 0%, #a999ff 45%, #7b6cf0 100%);
+  --headline: linear-gradient(135deg, #6558f5 0%, #4b3fd6 100%);
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -49,7 +50,10 @@ th { color: var(--muted); font-weight: 600; background: var(--tint); }
 .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.05fr .95fr; gap: 24px; align-items: center; padding: 88px 22px 40px; }
 .hero .icon { width: 84px; height: 84px; border-radius: 22px; box-shadow: 0 16px 36px rgba(101, 88, 245, .35); margin-bottom: 26px; }
 h1.big { font: 400 clamp(40px, 6vw, 66px)/1.02 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; letter-spacing: -.035em; margin: 0 0 18px; }
-h1.big span { font-weight: 800; background: var(--glow); -webkit-background-clip: text; background-clip: text; color: transparent; }
+h1.big span { font-weight: 800; color: var(--accent-deep); }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  h1.big span { background: var(--headline); -webkit-background-clip: text; background-clip: text; color: transparent; }
+}
 .lead { font-size: 20px; line-height: 1.5; color: var(--muted); max-width: 30em; margin: 0 0 26px; }
 .pills { display: flex; flex-wrap: wrap; gap: 10px; }
 .pill { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 600; color: var(--accent-deep); box-shadow: 0 4px 14px rgba(90, 76, 220, .08); }
@@ -64,7 +68,7 @@ h1.big span { font-weight: 800; background: var(--glow); -webkit-background-clip
 
 section { padding: 76px 0; }
 section.alt { background: var(--tint); }
-.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: 12.5px; font-weight: 700; color: var(--accent); margin: 0 0 10px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: 12.5px; font-weight: 700; color: var(--accent-deep); margin: 0 0 10px; }
 h2.sec { font-size: clamp(30px, 4.4vw, 44px); line-height: 1.06; letter-spacing: -.035em; margin: 0 0 14px; }
 .sec-lead { color: var(--muted); font-size: 19px; max-width: 36em; margin: 0 0 38px; }
 
